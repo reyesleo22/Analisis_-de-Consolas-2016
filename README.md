@@ -1,52 +1,59 @@
-# Análisis de Ventas de Videojuegos
+# 🎮 Análisis de Ventas de Videojuegos
 
-## Descripción del Proyecto
-Este proyecto realiza un **análisis exhaustivo** de las ventas de videojuegos utilizando datos históricos. Se investigan las plataformas más rentables, las preferencias por género, las diferencias regionales y el impacto de las calificaciones de críticos y usuarios en las ventas.
-
-El análisis se centra en:
-- Identificar plataformas y géneros con mayores ventas.
-- Comparar ventas en diferentes regiones: **América del Norte (NA), Europa (UE) y Japón (JP)**.
-- Probar hipótesis estadísticas para determinar diferencias significativas en calificaciones y ventas.
-- Generar visualizaciones y conclusiones útiles para el mercado de videojuegos.
+Este proyecto realiza un análisis exhaustivo de las **ventas de videojuegos** utilizando datos históricos 📊. Se exploran tendencias globales y regionales, preferencias de género, impacto de calificaciones y más, con el fin de obtener conclusiones útiles para el mercado gamer 🎯.
 
 ---
 
-## Estructura del Repositorio
+## 📌 Objetivos del Análisis
 
-### Archivos Principales:
-1. **`games.csv`**:
-   - Archivo original con datos crudos sobre videojuegos, plataformas, géneros y ventas.
-   - Incluye información regional y calificaciones de usuarios y críticos.
-
-2. **`games_preparados.csv`**:
-   - Archivo limpio y preparado después de realizar una transformación de los datos en el archivo `PreparaciondeDatos.py`.
-   - Contiene datos listos para el análisis en el Jupyter Notebook.
-
-3. **`reporte.ipynb`**:
-   - Notebook de Jupyter que contiene todo el análisis realizado, incluyendo:
-     - Exploración inicial de los datos.
-     - Visualización de tendencias de ventas por plataforma, región y género.
-     - Pruebas de hipótesis estadísticas.
-     - Gráficos y tablas para apoyar las conclusiones.
-   - El notebook culmina con una **conclusión final** que resume los hallazgos del análisis.
-
-4. **`PreparaciondeDatos.py`**:
-   - Script en Python encargado de la limpieza y preparación de los datos.
-   - Las operaciones realizadas incluyen:
-     - Conversión de tipos de datos.
-     - Manejo de valores nulos.
-     - Creación de nuevas columnas, como ventas totales.
-     - Exportación del archivo `games_preparados.csv`.
-
-5. **`.gitignore`**:
-   - Archivo que define los archivos y carpetas que deben ser ignorados por Git.
+- 🔍 Identificar **plataformas** y **géneros** con mayores ventas.
+- 🌎 Comparar ventas en diferentes regiones:  
+  - América del Norte (NA)  
+  - Europa (EU)  
+  - Japón (JP)
+- 🧪 Probar **hipótesis estadísticas** sobre calificaciones y ventas.
+- 📈 Generar **visualizaciones** que respalden las conclusiones del análisis.
 
 ---
 
-## Requisitos del Proyecto
-Para reproducir el análisis, asegúrate de tener instaladas las siguientes bibliotecas de Python:
+## 🗂️ Estructura del Repositorio
+📁 Análisis-Ventas-Videojuegos/
+├── games.csv
+├── games_preparados.csv
+├── PreparaciondeDatos.py
+├── reporte.ipynb
+├── .gitignore
+
+### 📄 Archivos Principales
+
+- **`games.csv`**  
+  📦 Dataset original con datos crudos sobre videojuegos, plataformas, géneros y ventas por región. Incluye calificaciones de críticos y usuarios.
+
+- **`games_preparados.csv`**  
+  🧹 Dataset limpio y transformado mediante `PreparaciondeDatos.py`, listo para análisis en el notebook.
+
+- **`PreparaciondeDatos.py`**  
+  ⚙️ Script en Python que realiza la limpieza de datos:  
+  - Conversión de tipos  
+  - Manejo de nulos  
+  - Creación de columnas (como `ventas_totales`)  
+  - Exportación del dataset final
+
+- **`reporte.ipynb`**  
+  📓 Notebook con el análisis completo:
+  - Exploración inicial  
+  - Visualización de tendencias  
+  - Pruebas estadísticas (como t-tests o ANOVA)  
+  - Conclusiones respaldadas con gráficos y tablas
+
+- **`.gitignore`**  
+  🚫 Archivos y carpetas ignoradas por Git (e.g., archivos temporales, entornos virtuales, etc.)
+
+---
+
+## 🛠️ Requisitos del Proyecto
+
+Para correr el análisis, asegúrate de tener instaladas las siguientes bibliotecas de Python 🐍:
+
 ```bash
-pandas
-matplotlib
-seaborn
-scipy
+pip install pandas matplotlib seaborn scipy
